@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
 @Repository
 public class RestaurantRedisRepositoryImpl implements RestaurantRedisRepository {
   @Autowired
-  RedisTemplate<String, Restaurant> redisTemplate;
+  private RedisTemplate<String, Restaurant> redisTemplate;
 
   private final long expireAfterSeconds = 60;
 
